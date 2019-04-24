@@ -6,6 +6,39 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
+
+class EmployeeTask
+{
+    EmployeeTask(){
+
+    }
+}
+
+
+class Worksheet
+{
+    ArrayList<ArrayList<EmployeeTask>> tasks;
+
+
+    void Initialize()
+    {
+        tasks.add(new ArrayList<EmployeeTask>()); // 9-10
+        tasks.add(new ArrayList<EmployeeTask>()); // 10-11
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>());
+        tasks.add(new ArrayList<EmployeeTask>()); // 18:00 - 19:00
+
+    }
+
+}
+
 public class Main extends Application {
 
     @Override
@@ -14,6 +47,10 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
+
+
+
+
     }
 
 
